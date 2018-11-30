@@ -1,0 +1,25 @@
+{
+  "name": "test-driving-javascript-applications_charpter5",
+  "version": "1.0.0",
+  "description": "*参考书《JavaScript 测试驱动开发》*",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welldoer/Test-Driving-JavaScript-Applications_charpter5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/welldoer/Test-Driving-JavaScript-Applications_charpter5/issues"
+  },
+  "homepage": "https://github.com/welldoer/Test-Driving-JavaScript-Applications_charpter5#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.1"
+  }
+}

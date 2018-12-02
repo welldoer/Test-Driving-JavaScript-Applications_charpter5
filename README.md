@@ -2,11 +2,11 @@
 
 *参考书《JavaScript 测试驱动开发》*
 
-0. 准备 GitHub、TravisCI、NodeJs 等环境；
+~~0. 准备 GitHub、TravisCI、NodeJs 等环境；~~
+
+~~1. 如果文件无效，read 函数调用错误处理器；~~
 
 1. 如果文件有效，read 函数调用 processTickers 函数；
-
-2. 如果文件无效，read 函数调用错误处理器；
 
 3. ProcessTickers 为每支股票调用 getPrice 函数；
 

@@ -18,7 +18,13 @@ var Stockfetch = function() {
 	fs.readFile( fileName, processResponse );
   };
 
-  this.parseTickers = function() {};
+  this.parseTickers = function( content  ) {
+    var isInRightFormat = function( str ) {
+      return str.trim().length !== 0 && str.indexOf( ' ' ) < 0;
+    };
+    return content.split( '\n' ).filter( isInRightFormat );
+  };
+  
   this.processTickers = function() {};
 };
 

@@ -24,11 +24,11 @@
 
 ~~10. read 函数处理内容格式不符合预期的文件~~
 
-11. parseTickers 接收一个字符串，返回一个股票列表
+~~11. parseTickers 接收一个字符串，返回一个股票列表~~
 
-12. 如果文件内容为空，则 parseTickers 返回一个空数组
+~~12. 如果文件内容为空，则 parseTickers 返回一个空数组~~
 
-13. 如果文件内容只包含空白字符，则 parseTickers 返回一个空数组
+~~13. 如果文件内容只包含空白字符，则 parseTickers 返回一个空数组~~
 
-14. parseTickers 处理格式不符合预期的内容
+~~14. parseTickers 处理格式不符合预期的内容~~
 

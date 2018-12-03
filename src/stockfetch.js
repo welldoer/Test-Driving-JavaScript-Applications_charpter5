@@ -9,7 +9,10 @@ var Stockfetch = function() {
 	    onError( 'Error reading file: ' + fileName );
 	  else {
 	    var tickers = self.parseTickers( data.toString() );
-	    self.processTickers( tickers );
+	    if( tickers.length == 0 )
+	      onError( 'File ' + fileName + ' has invalid content!' );
+	    else
+          self.processTickers( tickers );
 	  }
 	};
 	fs.readFile( fileName, processResponse );

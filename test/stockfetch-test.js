@@ -50,4 +50,20 @@ describe( 'Stockfetch tests', function() {
     
     stockfetch.readTickersFile( 'tickers.txt' );
   });
+
+  it( 'read should return error if given file is empty', function( done ) {
+    var onError = function( err ) {
+      expect( err ).to.be.eql( 'File tickers.txt has invalid content!' );
+      done();
+    };
+    
+    sandbox.stub( stockfetch, 'parseTickers' )
+           .withArgs( '' ).returns( [] );
+
+    sandbox.stub( fs, 'readFile' ).callsFake( function( fileName, callback ) {
+	  callback( null, '' );
+    });
+    
+    stockfetch.readTickersFile( 'tickers.txt', onError );
+  });
 });
